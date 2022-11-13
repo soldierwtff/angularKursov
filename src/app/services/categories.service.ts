@@ -1,0 +1,21 @@
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
+import { CategoryModel } from "../models/category.model";
+
+@Injectable({
+    providedIn:'root'
+})
+export class CategoriesService {
+url = 'http://localhost:3000/categories';
+
+constructor(private http:HttpClient){
+
+
+
+}//end constructor
+getAll$():Observable<CategoryModel[]>{
+    return this.http.get<CategoryModel[]>(this.url);
+}
+
+}//end class

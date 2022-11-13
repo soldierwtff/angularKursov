@@ -1,0 +1,8 @@
+<div *ngIf="loggedUser" class="header">
+
+<div class="div">Hello, {{loggedUser?.email}}</div>
+
+<div><button class="logout" (click)="onLogout()">Logout</button></div>
+<button class="edit" a *ngIf="loggedUser" [routerLink]="['/editUser',loggedUser.userID]">Edit Your Profile*</button>
+<button class="delete" *ngIf="loggedUser"
+                (click)="onUserDeleted()">Delete Your Profile </button>

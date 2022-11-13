@@ -1,0 +1,14 @@
+<article>
+    <h3>{{ course?.name }}</h3>
+
+    <p>{{ course?.description }}</p>
+
+    <div>
+        <button class="green" 
+                (click)="onClick()">Like course</button>
+
+                <button class="blue" a *ngIf="isOrg" [routerLink]="['/editCourse',course.id]">Edit</button>
+                <button *ngIf="isOrg" class="red"
+                (click)="onDelete()">Delete</button>
+    </div>
+</article>

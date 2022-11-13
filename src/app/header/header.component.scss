@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logout{
+    background-color: cyan;
+        outline: none;
+        border: none;
+        padding: 20px;
+    
+}
+.edit{
+    background-color: violet;
+        outline: none;
+        border: none;
+        padding: 20px;
+
+}
+.delete{
+    background-color: red;
+        outline: none;
+        border: none;
+        padding: 20px;
+}

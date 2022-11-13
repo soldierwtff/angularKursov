@@ -1,0 +1,13 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Name" formControlName="name">
+    <input type="text" placeholder="Description" formControlName="description">
+    <select formControlName="categoryId">
+        <option *ngFor="let category of categories"
+        [value] = "category.id">{{category.name}}</option>
+    </select>
+    <select formControlName="typeId">
+        <option *ngFor="let type of types"
+        [value] = type.id>{{type.name}}</option>
+    </select>
+    <button type="submit">Save</button>
+</form>

@@ -1,0 +1,19 @@
+<button class="create" a *ngIf="isOrg" routerLink="/create" >Create course</button>
+
+<h3 *ngIf="favoriteCourse; else noCourseSelectedRef">
+    Your favorite course is now {{ favoriteCourse?.name }}
+</h3>
+
+<ng-template #noCourseSelectedRef>
+    <h5 class="info">
+        Click on the button to like a course ^-^
+    </h5>
+</ng-template>
+
+<section>
+    <app-course-item-card 
+        *ngFor="let c of courses"
+        [course]="c" 
+        (clicked)="onItemClick($event)"
+        (deleted)="onItemDeleted($event)"></app-course-item-card>
+</section>

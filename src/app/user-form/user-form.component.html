@@ -1,0 +1,12 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Username" formControlName="username">
+    <input type="text" placeholder="Password" formControlName="password">
+    <input type="text" placeholder="Email" formControlName="email">
+    <select data-bind='value: state' formControlName = "isOrg" > 
+        <option [ngValue]="true">isOrganistaion</option>
+        <option [ngValue]="false">notOrganistaion</option>
+    </select>
+    <button class="save" type="submit">Save</button>
+</form>
+<h3 class="warning">*Editing will log you out</h3>
+<a href="http://localhost:4200/list"> <button>Cancel editing</button></a>

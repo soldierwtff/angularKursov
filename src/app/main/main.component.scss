@@ -1,0 +1,22 @@
+.info {
+    color: lightblue;
+}
+
+.warning {
+    color: orange;
+}
+
+section {
+    display: flex;
+
+    app-course-item-card {
+        width: 20%;
+    }
+}
+.create{
+    background-color: cadetblue;
+        outline: none;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+}

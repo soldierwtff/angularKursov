@@ -1,0 +1,90 @@
+{
+  "courses": [
+    {
+      "id": 2,
+      "name": "React Course for beginners",
+      "description": "React course for people who are just getting started with learning React and ReactJS",
+      "categoryId": 1,
+      "typeId": "1"
+    },
+    {
+      "id": 5,
+      "name": "Economics course",
+      "description": "Learn about the principes of economics and Start thinking like an Economist",
+      "categoryId": 3,
+      "typeId": 2
+    },
+    {
+      "id": 6,
+      "name": "Administration course",
+      "description": "zero to hero on how to be an ADMIN",
+      "categoryId": 1,
+      "typeId": 2
+    },
+    {
+      "id": 7,
+      "name": "test",
+      "description": "tessttttt",
+      "categoryId": 1,
+      "typeId": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "IT"
+    },
+    {
+      "id": 2,
+      "name": "Administration"
+    },
+    {
+      "id": 3,
+      "name": "Analysis"
+    },
+    {
+      "id": 4,
+      "name": "Quality"
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "name": "part-time"
+    },
+    {
+      "id": 2,
+      "name": "full-time"
+    },
+    {
+      "id": 3,
+      "name": "remote"
+    }
+  ],
+  "users": [
+    {
+      "userID": 1,
+      "username": "org",
+      "password": "org",
+      "email": "org@abv.bgb",
+      "isOrg": true,
+      "id": 1
+    },
+    {
+      "userID": 2,
+      "username": "user",
+      "password": "user",
+      "email": "user@abv.bg",
+      "isOrg": false,
+      "id": 2
+    },
+    {
+      "userID": 2,
+      "username": "user1",
+      "password": "user1",
+      "email": "user@abv.bgb",
+      "isOrg": false,
+      "id": 3
+    }
+  ]
+}
